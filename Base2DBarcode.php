@@ -13,6 +13,10 @@
 
 namespace BG\Barcode;
 
+include_once('modules/datamatrix.php');
+include_once('modules/pdf417.php');
+include_once('modules/qrcode.php');
+
 use BG\Barcode\Modules\pdf417 as PDF417,
     BG\Barcode\Modules\datamatrix as Datamatrix,
     BG\Barcode\Modules\qrcode as QRcode;
@@ -20,7 +24,6 @@ use BG\Barcode\Modules\pdf417 as PDF417,
 /**
  * class Base2DBarcode 1.0.0
  *
- * @package CCE\CloudBundle\Service\Barcode
  */
 class Base2DBarcode
 {
@@ -239,6 +242,21 @@ class Base2DBarcode
         }
 
         return true;
+    }
+
+    /**
+     * return filename from give path
+     *
+     * @todo: refactor this, move method in some kind of utility class
+     *
+     * @param string $path
+     *
+     * @return mixed
+     */
+    public function getBarcodeFilenameFromGenPath($path)
+    {
+        $bcPathArr = explode('/', $path);
+        return $bcPathArr[count($bcPathArr)-1];
     }
 
     /**

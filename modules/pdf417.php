@@ -16,7 +16,6 @@ namespace BG\Barcode\Modules;
 /**
  * class pdf417 1.0.0
  * PDF417 (ISO/IEC 15438:2006) is a 2-dimensional stacked bar code (requires PHP bcmath extension)
- *
  */
 class pdf417
 {

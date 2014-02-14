@@ -1,10 +1,10 @@
-2D-3D-Barcodes-Generator
+BGBarcodeGenerator Class
 ========================
 
 PHP5+ refactored code version of Dinesh Rabara's 2D-3D Barcode Generator class/lib. This barcode generator class supports ImageMagick/GDLib based image rendering, svg and html table drawn output of the following 1D/2D bar codes:
 
-1D bar-codes
-------------
+1d barcodes
+-----------
 
 * C39 : CODE 39 - ANSI MH10.8M-1983 - USD-3 - 3 of 9.
 * C39+ : CODE 39 with checksum
@@ -37,8 +37,8 @@ PHP5+ refactored code version of Dinesh Rabara's 2D-3D Barcode Generator class/l
 * PHARMA : PHARMACODE
 * PHARMA2T : PHARMACODE TWO-TRACKS
 
-2D bar-codes
-------------
+2d barcodes
+-----------
 * DATAMATRIX : Datamatrix (ISO/IEC 16022)
 * PDF417 : PDF417 (ISO/IEC 15438:2006) / a,e,t,s,f,o0,o1,o2,o3,o4,o5,o6
 * QRCODE : QRcode Low error correction
@@ -48,3 +48,15 @@ PHP5+ refactored code version of Dinesh Rabara's 2D-3D Barcode Generator class/l
 * QRCODE, H : QR-CODE Best error correction
 * QR, RAW : raw mode - comma-separad list of array rows
 * QR, RAW2 : raw mode - array rows are surrounded by square parenthesis.
+
+How To Contribute
+-----------------
+To contribute changes, fixes, additions/features please open a pull request with your new code. please take not, that if you add new features or modify existing ones you have to doc this in projects README file (also update projects CHANGELOG file!)
+
+License
+-------
+See: LICENSE
+
+Credits
+-------
+just another fork of Dinesh Rabara's 2D-3D Barcode Generator class on any open questions or problems feel free to contact me directly or just open an issue ...

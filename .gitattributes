@@ -1,6 +1,1 @@
-*.crt -crlf
-*.key -crlf
-*.srl -crlf
-*.pub -crlf
-*.priv -crlf
-*.txt -crlf
+* text=auto

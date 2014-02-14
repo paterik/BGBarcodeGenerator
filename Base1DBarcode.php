@@ -16,7 +16,6 @@ namespace BG\Barcode;
 /**
  * class Base1DBarcode 1.0.0
  *
- * @package CCE\CloudBundle\Service\Barcode
  */
 class Base1DBarcode
 {
@@ -228,6 +227,21 @@ class Base1DBarcode
         }
 
         return true;
+    }
+
+    /**
+     * return filename from give path
+     *
+     * @todo: refactor this, move method in some kind of utility class
+     *
+     * @param string $path
+     *
+     * @return mixed
+     */
+    public function getBarcodeFilenameFromGenPath($path)
+    {
+        $bcPathArr = explode('/', $path);
+        return $bcPathArr[count($bcPathArr)-1];
     }
 
     /**
