@@ -1,0 +1,10 @@
+Changelog
+=========
+
+1.0.0 (2014-02-14)
+------------------
+
+ * fixed datamatrix encoder
+ * optimized qrcode encoder
+ * fixed GDLib rendering method
+ * fixed structure in 1d code main class

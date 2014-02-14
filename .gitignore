@@ -1,0 +1,12 @@
+# OS stuff
+.DS_Store
+.buildpath
+*.swp
+*.tmproj
+
+# IDE stuff
+nbproject/
+.idea/
+.settings
+.project
+atlassian-ide-plugin.xml
