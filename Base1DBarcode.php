@@ -5,7 +5,7 @@
  * Generator class/lib (https://github.com/dineshrabara/2D-3D-Barcodes-Generator)
  *
  * BGBarcodeGenerator-1.0.0
- * master/dev branch: https://github.com/paterik/2D-3D-Barcodes-Generator
+ * master/dev branch: https://github.com/paterik/BGBarcodeGenerator
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -15,7 +15,10 @@ namespace BG\Barcode;
 
 /**
  * class Base1DBarcode 1.0.0
+ * 1D barcode base class
  *
+ * @author Dinesh Rabara, https://github.com/dineshrabara
+ * @author Patrick Paechnatz, https://github.com/paterik
  */
 class Base1DBarcode
 {

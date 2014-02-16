@@ -5,7 +5,7 @@
  * Generator class/lib (https://github.com/dineshrabara/2D-3D-Barcodes-Generator)
  *
  * BGBarcodeGenerator-1.0.0
- * master/dev branch: https://github.com/paterik/2D-3D-Barcodes-Generator
+ * master/dev branch: https://github.com/paterik/BGBarcodeGenerator
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -16,6 +16,9 @@ namespace BG\Barcode\Modules;
 /**
  * class pdf417 1.0.0
  * PDF417 (ISO/IEC 15438:2006) is a 2-dimensional stacked bar code (requires PHP bcmath extension)
+ *
+ * @author Dinesh Rabara, https://github.com/dineshrabara
+ * @author Patrick Paechnatz, https://github.com/paterik
  */
 class pdf417
 {
