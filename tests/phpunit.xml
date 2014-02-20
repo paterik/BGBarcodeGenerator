@@ -11,8 +11,8 @@
          bootstrap="./bootstrap.php"
 >
     <testsuites>
-        <testsuite name="BGBarcodeBundle test suite">
-            <directory suffix="Test.php">./Tests</directory>
+        <testsuite name="BGBarcodeGenerator_UniTests">
+            <file>tests/BGBarcodeGeneratorUnitTests.php</file>
         </testsuite>
     </testsuites>
 
