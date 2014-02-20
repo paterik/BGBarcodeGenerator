@@ -49,6 +49,10 @@ PHP5+ refactored code version of Dinesh Rabara's 2D-3D Barcode Generator class/l
 * QR, RAW : raw mode - comma-separad list of array rows
 * QR, RAW2 : raw mode - array rows are surrounded by square parenthesis.
 
+Build Status
+------------
+[![Build Status](https://travis-ci.org/paterik/BGBarcodeGenerator.png?branch=master)](https://travis-ci.org/paterik/BGBarcodeGenerator)
+
 How To Contribute
 -----------------
 To contribute changes, fixes, additions/features please open a pull request with your new code. please take not, that if you add new features or modify existing ones you have to doc this in projects README file (also update projects CHANGELOG file!)
