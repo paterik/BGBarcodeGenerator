@@ -11,7 +11,7 @@
          bootstrap="./bootstrap.php"
 >
     <testsuites>
-        <testsuite name="BGBarcodeGenerator_UniTests">
+        <testsuite name="BGBarcodeGenerator_UnitTests">
             <file>./BGBarcodeGeneratorUnitTests.php</file>
         </testsuite>
     </testsuites>

@@ -84,7 +84,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testC39GetBarcodeHTMLRaw()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcHTMLRaw = $d1->getBarcodeHTML(self::C_BC_DEFAULT, 'C39', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
         $bcCheckArray = explode('background-color:black', $bcHTMLRaw);
@@ -101,7 +101,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testC39EGetBarcodePNGPath()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'C39E', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
@@ -124,7 +124,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testC39EGetBarcodeHTMLRaw()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcHTMLRaw = $d1->getBarcodeHTML(self::C_BC_DEFAULT, 'C39E', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
         $bcCheckArray = explode('background-color:black', $bcHTMLRaw);
@@ -140,7 +140,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testC39PlusGetBarcodePNGPath()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'C39+', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
@@ -163,7 +163,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testC39PlusGetBarcodeHTMLRaw()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcHTMLRaw = $d1->getBarcodeHTML(self::C_BC_DEFAULT, 'C39+', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
         $bcCheckArray = explode('background-color:black', $bcHTMLRaw);
@@ -179,7 +179,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testC93PlusGetBarcodePNGPath()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'C93', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
@@ -202,7 +202,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testC93PlusGetBarcodeHTMLRaw()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcHTMLRaw = $d1->getBarcodeHTML(self::C_BC_DEFAULT, 'C93', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
         $bcCheckArray = explode('background-color:black', $bcHTMLRaw);
@@ -218,7 +218,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testS25GetBarcodePNGPath()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'S25', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
@@ -241,7 +241,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testS25GetBarcodeHTMLRaw()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcHTMLRaw = $d1->getBarcodeHTML(self::C_BC_DEFAULT, 'S25', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
         $bcCheckArray = explode('background-color:black', $bcHTMLRaw);
@@ -257,7 +257,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testI25GetBarcodePNGPath()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'I25', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
@@ -280,7 +280,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testI25GetBarcodeHTMLRaw()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcHTMLRaw = $d1->getBarcodeHTML(self::C_BC_DEFAULT, 'I25', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
         $bcCheckArray = explode('background-color:black', $bcHTMLRaw);
@@ -296,7 +296,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testI25PlusGetBarcodePNGPath()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'I25+', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
@@ -319,7 +319,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testI25PlusGetBarcodeHTMLRaw()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcHTMLRaw = $d1->getBarcodeHTML(self::C_BC_DEFAULT, 'I25+', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
         $bcCheckArray = explode('background-color:black', $bcHTMLRaw);
@@ -335,7 +335,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testC128GetBarcodePNGPath()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'C128', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
@@ -358,7 +358,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testC128GetBarcodeHTMLRaw()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcHTMLRaw = $d1->getBarcodeHTML(self::C_BC_DEFAULT, 'C128', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
         $bcCheckArray = explode('background-color:black', $bcHTMLRaw);
@@ -374,7 +374,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testC128AGetBarcodePNGPath()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'C128A', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
@@ -397,7 +397,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testC128AGetBarcodeHTMLRaw()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcHTMLRaw = $d1->getBarcodeHTML(self::C_BC_DEFAULT, 'C128', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
         $bcCheckArray = explode('background-color:black', $bcHTMLRaw);
@@ -413,7 +413,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testC128BGetBarcodePNGPath()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'C128B', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
@@ -436,7 +436,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testC128BGetBarcodeHTMLRaw()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcHTMLRaw = $d1->getBarcodeHTML(self::C_BC_DEFAULT, 'C128B', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
         $bcCheckArray = explode('background-color:black', $bcHTMLRaw);
@@ -452,7 +452,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testC128CGetBarcodePNGPath()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_C128C, 'C128B', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
@@ -475,7 +475,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testC128CGetBarcodeHTMLRaw()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcHTMLRaw = $d1->getBarcodeHTML(self::C_BC_C128C, 'C128C', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
         $bcCheckArray = explode('background-color:black', $bcHTMLRaw);
@@ -491,7 +491,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testEAN2GetBarcodePNGPath()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_EAN2, 'EAN2', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
@@ -514,7 +514,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testEAN2GetBarcodeHTMLRaw()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcHTMLRaw = $d1->getBarcodeHTML(self::C_BC_EAN2, 'EAN2', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
         $bcCheckArray = explode('background-color:black', $bcHTMLRaw);
@@ -530,7 +530,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testEAN5GetBarcodePNGPath()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_EAN5, 'EAN5', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
@@ -553,7 +553,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testEAN5GetBarcodeHTMLRaw()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcHTMLRaw = $d1->getBarcodeHTML(self::C_BC_EAN2, 'EAN5', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
         $bcCheckArray = explode('background-color:black', $bcHTMLRaw);
@@ -569,7 +569,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testEAN13GetBarcodePNGPath()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_EAN5, 'EAN13', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
@@ -592,7 +592,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testEAN13GetBarcodeHTMLRaw()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcHTMLRaw = $d1->getBarcodeHTML(self::C_BC_EAN2, 'EAN13', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
         $bcCheckArray = explode('background-color:black', $bcHTMLRaw);
@@ -608,7 +608,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testEAN8GetBarcodePNGPath()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_EAN5, 'EAN8', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
@@ -631,7 +631,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testEAN8GetBarcodeHTMLRaw()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcHTMLRaw = $d1->getBarcodeHTML(self::C_BC_EAN2, 'EAN13', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
         $bcCheckArray = explode('background-color:black', $bcHTMLRaw);
@@ -647,7 +647,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testUPCAGetBarcodePNGPath()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_UPCA, 'UPCA', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
@@ -670,7 +670,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testUPCAGetBarcodeHTMLRaw()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcHTMLRaw = $d1->getBarcodeHTML(self::C_BC_UPCA, 'UPCA', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
         $bcCheckArray = explode('background-color:black', $bcHTMLRaw);
@@ -686,7 +686,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testUPCEGetBarcodePNGPath()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_UPCE, 'UPCE', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
@@ -709,7 +709,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testUPCEGetBarcodeHTMLRaw()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcHTMLRaw = $d1->getBarcodeHTML(self::C_BC_UPCE, 'UPCE', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
         $bcCheckArray = explode('background-color:black', $bcHTMLRaw);
@@ -725,7 +725,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testMSIGetBarcodePNGPath()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'MSI', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
@@ -748,7 +748,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testMSIGetBarcodeHTMLRaw()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcHTMLRaw = $d1->getBarcodeHTML(self::C_BC_DEFAULT, 'MSI', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
         $bcCheckArray = explode('background-color:black', $bcHTMLRaw);
@@ -764,7 +764,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testMSIPlusGetBarcodePNGPath()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'MSI+', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
@@ -787,7 +787,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testMSIPlusGetBarcodeHTMLRaw()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcHTMLRaw = $d1->getBarcodeHTML(self::C_BC_DEFAULT, 'MSI+', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
         $bcCheckArray = explode('background-color:black', $bcHTMLRaw);
@@ -803,7 +803,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testPOSTNETGetBarcodePNGPath()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'POSTNET', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
@@ -826,7 +826,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testPOSTNETGetBarcodeHTMLRaw()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcHTMLRaw = $d1->getBarcodeHTML(self::C_BC_DEFAULT, 'POSTNET', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
         $bcCheckArray = explode('background-color:black', $bcHTMLRaw);
@@ -842,7 +842,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testPLANETGetBarcodePNGPath()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'PLANET', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
@@ -865,7 +865,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testPLANETGetBarcodeHTMLRaw()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcHTMLRaw = $d1->getBarcodeHTML(self::C_BC_DEFAULT, 'PLANET', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
         $bcCheckArray = explode('background-color:black', $bcHTMLRaw);
@@ -881,7 +881,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testRMS4CCGetBarcodePNGPath()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'RMS4CC', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
@@ -904,7 +904,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testRMS4CCGetBarcodeHTMLRaw()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcHTMLRaw = $d1->getBarcodeHTML(self::C_BC_DEFAULT, 'RMS4CC', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
         $bcCheckArray = explode('background-color:black', $bcHTMLRaw);
@@ -920,7 +920,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testKIXGetBarcodePNGPath()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'KIX', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
@@ -943,7 +943,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testKIXGetBarcodeHTMLRaw()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcHTMLRaw = $d1->getBarcodeHTML(self::C_BC_DEFAULT, 'KIX', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
         $bcCheckArray = explode('background-color:black', $bcHTMLRaw);
@@ -959,7 +959,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testIMBGetBarcodePNGPath()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'IMB', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
@@ -982,7 +982,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testIMBGetBarcodeHTMLRaw()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcHTMLRaw = $d1->getBarcodeHTML(self::C_BC_DEFAULT, 'IMB', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
         $bcCheckArray = explode('background-color:black', $bcHTMLRaw);
@@ -998,7 +998,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testCODABARGetBarcodePNGPath()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'CODABAR', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
@@ -1021,7 +1021,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testCODABARGetBarcodeHTMLRaw()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcHTMLRaw = $d1->getBarcodeHTML(self::C_BC_DEFAULT, 'CODABAR', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
         $bcCheckArray = explode('background-color:black', $bcHTMLRaw);
@@ -1037,7 +1037,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testCODE11GetBarcodePNGPath()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'CODE11', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
@@ -1060,7 +1060,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testCODE11GetBarcodeHTMLRaw()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcHTMLRaw = $d1->getBarcodeHTML(self::C_BC_DEFAULT, 'CODE11', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
         $bcCheckArray = explode('background-color:black', $bcHTMLRaw);
@@ -1076,7 +1076,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testPHARMAGetBarcodePNGPath()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'PHARMA', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
@@ -1099,7 +1099,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testPHARMAGetBarcodeHTMLRaw()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcHTMLRaw = $d1->getBarcodeHTML(self::C_BC_DEFAULT, 'PHARMA', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
         $bcCheckArray = explode('background-color:black', $bcHTMLRaw);
@@ -1115,7 +1115,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testPHARMA2TGetBarcodePNGPath()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'PHARMA2T', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
@@ -1138,7 +1138,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testPHARMA2TGetBarcodeHTMLRaw()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcHTMLRaw = $d1->getBarcodeHTML(self::C_BC_DEFAULT, 'PHARMA2T', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
         $bcCheckArray = explode('background-color:black', $bcHTMLRaw);
@@ -1154,7 +1154,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testDATAMATRIXGetBarcodePNGPath()
     {
         $d2 = new matrixCode();
-        $d2->savePath = '/tmp/';
+        $d2->savePath = self::C_TMP_PATH;
 
         $bcPathAbs = $d2->getBarcodePNGPath(self::C_MC_DEFAULT, 'datamatrix', self::C_MC_2D_WIDTH, self::C_MC_2D_HEIGHT);
 
@@ -1177,7 +1177,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testPDF417GetBarcodePNGPath()
     {
         $d2 = new matrixCode();
-        $d2->savePath = '/tmp/';
+        $d2->savePath = self::C_TMP_PATH;
 
         $bcPathAbs = $d2->getBarcodePNGPath(self::C_MC_DEFAULT, 'pdf417', self::C_MC_2D_WIDTH, self::C_MC_2D_HEIGHT);
 
@@ -1200,7 +1200,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testQRCODEGetBarcodePNGPath()
     {
         $d2 = new matrixCode();
-        $d2->savePath = '/tmp/';
+        $d2->savePath = self::C_TMP_PATH;
 
         $bcPathAbs = $d2->getBarcodePNGPath(self::C_MC_DEFAULT, 'qrcode', self::C_MC_2D_WIDTH, self::C_MC_2D_HEIGHT);
 
@@ -1223,7 +1223,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     public function testI25GetBarcodePNGPathVertical()
     {
         $d1 = new barCode();
-        $d1->savePath = '/tmp/';
+        $d1->savePath = self::C_TMP_PATH;
 
         $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'I25', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT, array(0,0,0), true);
 
