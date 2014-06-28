@@ -45,7 +45,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     const C_MC_2D_HEIGHT = 2;
     const C_MC_2D_WIDTH = 2;
 
-    const C_TMP_PATH = '/temp/';
+    const C_TMP_PATH = '/tmp/';
 
     /**
      * gdlib or imagemagic availability check
