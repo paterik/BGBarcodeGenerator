@@ -13,13 +13,13 @@
 
 namespace BG\Barcode;
 
-include_once('modules/datamatrix.php');
-include_once('modules/pdf417.php');
-include_once('modules/qrcode.php');
+include_once('modules/Datamatrix.php');
+include_once('modules/PDF417.php');
+include_once('modules/QRcode.php');
 
-use BG\Barcode\Modules\pdf417 as PDF417,
-    BG\Barcode\Modules\datamatrix as Datamatrix,
-    BG\Barcode\Modules\qrcode as QRcode;
+use BG\Barcode\Modules\PDF417,
+    BG\Barcode\Modules\Datamatrix,
+    BG\Barcode\Modules\QRcode;
 
 /**
  * class Base2DBarcode 1.0.0
