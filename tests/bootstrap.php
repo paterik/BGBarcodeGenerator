@@ -11,7 +11,7 @@
  */
 
 define('TESTS_PATH', __DIR__);
-define('TESTS_TEMP_DIR', __DIR__ . '/temp');
+define('TESTS_TEMP_DIR', __DIR__ . '/tmp');
 
 if (!class_exists('PHPUnit_Framework_TestCase') ||
     version_compare(PHPUnit_Runner_Version::id(), '3.5') < 0
