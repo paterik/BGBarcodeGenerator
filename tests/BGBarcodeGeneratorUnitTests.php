@@ -45,14 +45,15 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     const C_MC_2D_HEIGHT = 2;
     const C_MC_2D_WIDTH = 2;
 
-    const C_TMP_PATH = '/tmp/';
+    const C_TMP_PATH = '/temp/';
 
     /**
      * gdlib or imagemagic availability check
      */
     public function testImageRenderer()
     {
-        $this->assertTrue(function_exists('imagecreate') || function_exists('imagick'));
+        $checkCondition = function_exists('imagecreate') || function_exists('imagick');
+        $this->assertTrue($checkCondition, 'neither GDlib nor ImageMagick extension found, you\'ve to install on of both to use BGBarcodeGenerator lib.');
     }
 
     /**
@@ -71,8 +72,6 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
         } else {
             $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         }
-
-        unlink($bcPathAbs);
 
         $this->assertTrue($checkCondition);
     }
@@ -112,7 +111,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
             $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         }
 
-        unlink($bcPathAbs);
+        if ($bcPathAbs!==false) unlink($bcPathAbs);
 
         $this->assertTrue($checkCondition);
     }
@@ -151,7 +150,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
             $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         }
 
-        unlink($bcPathAbs);
+        if ($bcPathAbs!==false) unlink($bcPathAbs);
 
         $this->assertTrue($checkCondition);
     }
@@ -190,7 +189,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
             $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         }
 
-        unlink($bcPathAbs);
+        if ($bcPathAbs!==false) unlink($bcPathAbs);
 
         $this->assertTrue($checkCondition);
     }
@@ -229,7 +228,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
             $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         }
 
-        unlink($bcPathAbs);
+        if ($bcPathAbs!==false) unlink($bcPathAbs);
 
         $this->assertTrue($checkCondition);
     }
@@ -268,7 +267,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
             $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         }
 
-        unlink($bcPathAbs);
+        if ($bcPathAbs!==false) unlink($bcPathAbs);
 
         $this->assertTrue($checkCondition);
     }
@@ -307,7 +306,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
             $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         }
 
-        unlink($bcPathAbs);
+        if ($bcPathAbs!==false) unlink($bcPathAbs);
 
         $this->assertTrue($checkCondition);
     }
@@ -346,7 +345,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
             $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         }
 
-        unlink($bcPathAbs);
+        if ($bcPathAbs!==false) unlink($bcPathAbs);
 
         $this->assertTrue($checkCondition);
     }
@@ -385,7 +384,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
             $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         }
 
-        unlink($bcPathAbs);
+        if ($bcPathAbs!==false) unlink($bcPathAbs);
 
         $this->assertTrue($checkCondition);
     }
@@ -424,7 +423,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
             $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         }
 
-        unlink($bcPathAbs);
+        if ($bcPathAbs!==false) unlink($bcPathAbs);
 
         $this->assertTrue($checkCondition);
     }
@@ -463,7 +462,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
             $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         }
 
-        unlink($bcPathAbs);
+        if ($bcPathAbs!==false) unlink($bcPathAbs);
 
         $this->assertTrue($checkCondition);
     }
@@ -502,7 +501,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
             $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         }
 
-        unlink($bcPathAbs);
+        if ($bcPathAbs!==false) unlink($bcPathAbs);
 
         $this->assertTrue($checkCondition);
     }
@@ -541,7 +540,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
             $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         }
 
-        unlink($bcPathAbs);
+        if ($bcPathAbs!==false) unlink($bcPathAbs);
 
         $this->assertTrue($checkCondition);
     }
@@ -580,9 +579,9 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
             $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         }
 
-        unlink($bcPathAbs);
+        if ($bcPathAbs!==false) unlink($bcPathAbs);
 
-        $this->assertTrue($checkCondition);
+        if ($bcPathAbs!==false) $this->assertTrue($checkCondition);
     }
 
     /**
@@ -619,7 +618,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
             $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         }
 
-        unlink($bcPathAbs);
+        if ($bcPathAbs!==false) unlink($bcPathAbs);
 
         $this->assertTrue($checkCondition);
     }
@@ -658,7 +657,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
             $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         }
 
-        unlink($bcPathAbs);
+        if ($bcPathAbs!==false) unlink($bcPathAbs);
 
         $this->assertTrue($checkCondition);
     }
@@ -697,7 +696,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
             $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         }
 
-        unlink($bcPathAbs);
+        if ($bcPathAbs!==false) unlink($bcPathAbs);
 
         $this->assertTrue($checkCondition);
     }
@@ -736,7 +735,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
             $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         }
 
-        unlink($bcPathAbs);
+        if ($bcPathAbs!==false) unlink($bcPathAbs);
 
         $this->assertTrue($checkCondition);
     }
@@ -775,7 +774,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
             $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         }
 
-        unlink($bcPathAbs);
+        if ($bcPathAbs!==false) unlink($bcPathAbs);
 
         $this->assertTrue($checkCondition);
     }
@@ -814,7 +813,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
             $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         }
 
-        unlink($bcPathAbs);
+        if ($bcPathAbs!==false) unlink($bcPathAbs);
 
         $this->assertTrue($checkCondition);
     }
@@ -853,7 +852,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
             $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         }
 
-        unlink($bcPathAbs);
+        if ($bcPathAbs!==false) unlink($bcPathAbs);
 
         $this->assertTrue($checkCondition);
     }
@@ -892,7 +891,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
             $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         }
 
-        unlink($bcPathAbs);
+        if ($bcPathAbs!==false) unlink($bcPathAbs);
 
         $this->assertTrue($checkCondition);
     }
@@ -931,7 +930,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
             $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         }
 
-        unlink($bcPathAbs);
+        if ($bcPathAbs!==false) unlink($bcPathAbs);
 
         $this->assertTrue($checkCondition);
     }
@@ -970,7 +969,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
             $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         }
 
-        unlink($bcPathAbs);
+        if ($bcPathAbs!==false) unlink($bcPathAbs);
 
         $this->assertTrue($checkCondition);
     }
@@ -1009,7 +1008,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
             $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         }
 
-        unlink($bcPathAbs);
+        if ($bcPathAbs!==false) unlink($bcPathAbs);
 
         $this->assertTrue($checkCondition);
     }
@@ -1048,7 +1047,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
             $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         }
 
-        unlink($bcPathAbs);
+        if ($bcPathAbs!==false) unlink($bcPathAbs);
 
         $this->assertTrue($checkCondition);
     }
@@ -1087,7 +1086,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
             $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         }
 
-        unlink($bcPathAbs);
+        if ($bcPathAbs!==false) unlink($bcPathAbs);
 
         $this->assertTrue($checkCondition);
     }
@@ -1126,7 +1125,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
             $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         }
 
-        unlink($bcPathAbs);
+        if ($bcPathAbs!==false) unlink($bcPathAbs);
 
         $this->assertTrue($checkCondition);
     }
@@ -1165,7 +1164,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
             $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         }
 
-        unlink($bcPathAbs);
+        if ($bcPathAbs!==false) unlink($bcPathAbs);
 
         $this->assertTrue($checkCondition);
     }
@@ -1188,7 +1187,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
             $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         }
 
-        unlink($bcPathAbs);
+        if ($bcPathAbs!==false) unlink($bcPathAbs);
 
         $this->assertTrue($checkCondition);
     }
@@ -1211,7 +1210,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
             $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         }
 
-        unlink($bcPathAbs);
+        if ($bcPathAbs!==false) unlink($bcPathAbs);
 
         $this->assertTrue($checkCondition);
     }
@@ -1234,7 +1233,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
             $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         }
 
-        unlink($bcPathAbs);
+        if ($bcPathAbs!==false) unlink($bcPathAbs);
 
         $this->assertTrue($checkCondition);
     }

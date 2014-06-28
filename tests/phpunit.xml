@@ -12,7 +12,7 @@
 >
     <testsuites>
         <testsuite name="BGBarcodeGenerator_UniTests">
-            <file>tests/BGBarcodeGeneratorUnitTests.php</file>
+            <file>./BGBarcodeGeneratorUnitTests.php</file>
         </testsuite>
     </testsuites>
 
