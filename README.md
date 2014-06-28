@@ -3,7 +3,9 @@ BGBarcodeGenerator Class
 
 PHP5+ refactored code version of Dinesh Rabara's 2D-3D Barcode Generator class/lib. This barcode generator class supports ImageMagick/GDLib based image rendering, svg and html table drawn output of the following 1D/2D bar codes:
 
-1d barcodes
+[![Build Status](https://travis-ci.org/paterik/BGBarcodeGenerator.png?branch=master)](https://travis-ci.org/paterik/BGBarcodeGenerator)
+
+1D barcodes
 -----------
 
 * C39 : CODE 39 - ANSI MH10.8M-1983 - USD-3 - 3 of 9.
@@ -37,7 +39,7 @@ PHP5+ refactored code version of Dinesh Rabara's 2D-3D Barcode Generator class/l
 * PHARMA : PHARMACODE
 * PHARMA2T : PHARMACODE TWO-TRACKS
 
-2d barcodes
+2D barcodes
 -----------
 * DATAMATRIX : Datamatrix (ISO/IEC 16022)
 * PDF417 : PDF417 (ISO/IEC 15438:2006) / a,e,t,s,f,o0,o1,o2,o3,o4,o5,o6
@@ -48,10 +50,6 @@ PHP5+ refactored code version of Dinesh Rabara's 2D-3D Barcode Generator class/l
 * QRCODE, H : QR-CODE Best error correction
 * QR, RAW : raw mode - comma-separad list of array rows
 * QR, RAW2 : raw mode - array rows are surrounded by square parenthesis.
-
-Build Status
-------------
-[![Build Status](https://travis-ci.org/paterik/BGBarcodeGenerator.png?branch=master)](https://travis-ci.org/paterik/BGBarcodeGenerator)
 
 How To Contribute
 -----------------
