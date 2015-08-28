@@ -1,6 +1,12 @@
 Changelog
 =========
 
+1.0.1 (2015-08-28)
+------------------
+ * minor filename issue
+ * change license from MIT to GNU-LGPLv3
+ * change phpdoc base class header information to comply GNU-LGPLv3
+
 1.0.0 (2014-02-14)
 ------------------
 
