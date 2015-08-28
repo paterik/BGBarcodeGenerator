@@ -1,5 +1,5 @@
 {
-    "name": "bg/barcode-generator",
+    "name": "bitgrave/barcode-generator",
     "keywords": ["barcode", "datamatrix", "qrcode", "pdf417", "generator"],
     "description": "simple barcode generator base classes supporting 2d- and datamatrix barcodes",
     "license": "GNU-LGPLv3",
