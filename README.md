@@ -60,6 +60,6 @@ License
 -------
 See: LICENSE
 
-Credits
--------
-just another fork of Dinesh Rabara's 2D-3D Barcode Generator class on any open questions or problems feel free to contact me directly or just open an issue ...
+Notes
+-----
+on any open questions or problems feel free to contact me directly or just open an issue ...
