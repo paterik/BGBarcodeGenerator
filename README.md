@@ -2,6 +2,7 @@ BGBarcodeGenerator Class
 ========================
 
 PHP5+ refactored code version of Dinesh Rabara's 2D-3D Barcode Generator class/lib. This barcode generator class supports ImageMagick/GDLib based image rendering, svg and html table drawn output of the following 1D/2D bar codes:
+Due to some licensing problems of origin pre-refactored code base we've to decide to change the base license from MIT to GNU-LGPLv3. You can found the TCPDF source license under LICENSE.TCPDF and the current (project) license under LICENSE
 
 [![Build Status](https://travis-ci.org/paterik/BGBarcodeGenerator.png?branch=master)](https://travis-ci.org/paterik/BGBarcodeGenerator)
 
