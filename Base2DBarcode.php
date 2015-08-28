@@ -44,8 +44,9 @@ use BG\Barcode\Modules\PDF417,
     BG\Barcode\Modules\QRCode;
 
 /**
- * class Base2DBarcode 1.0.0
- * 2D matrix barcode base class, based on 2dbarcodes.php v1.0.013 (Nicola Asuni)
+ * class Base2DBarcode 1.0.0, based on 2dbarcodes.php v1.0.013 (Nicola Asuni)
+ *
+ * 2D matrix barcode base class
  *
  * @author Nicola Asuni
  * @author Dinesh Rabara, https://github.com/dineshrabara
