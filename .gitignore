@@ -3,6 +3,7 @@
 .buildpath
 *.swp
 *.tmproj
+*.log
 
 # IDE stuff
 nbproject/
@@ -10,3 +11,4 @@ nbproject/
 .settings
 .project
 atlassian-ide-plugin.xml
+composer.lock
