@@ -2,7 +2,7 @@
     "name": "bg/barcode-generator",
     "keywords": ["barcode", "datamatrix", "qrcode", "pdf417", "generator"],
     "description": "simple barcode generator base classes supporting 2d- and datamatrix barcodes",
-    "license": "MIT",
+    "license": "GNU-LGPLv3",
     "authors": [
         {
             "name": "Patrick Paechnatz",
