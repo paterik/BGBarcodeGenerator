@@ -54,7 +54,7 @@ $bc2d->savePath = $bc1d->savePath;
 
             <div class="barcode-block">
                 <h1>QRCode 2D Code</h1>
-                <p>QRcode, Basic</p>
+                <p>QRCode, Basic</p>
                 <img src="/tmp/<?php echo $bc2d->getBarcodeFilenameFromGenPath($bc2d->getBarcodePNGPath('hello world!', 'qrcode', 4, 4)) ?>" alt="qrcode barcode" title="qrcode Barcode Image">
                 <h2>hello world!</h2>
             </div>
