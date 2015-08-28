@@ -1227,10 +1227,9 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
 
         $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'I25', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT, array(0,0,0), true);
 
+        $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         if (function_exists('imagecreate')) {
-            $checkCondition = (file_exists($bcPathAbs)) && (filesize($bcPathAbs) === 265);
-        } else {
-            $checkCondition = (file_exists($bcPathAbs)) ? true : false;
+            $checkCondition = (file_exists($bcPathAbs)) && (filesize($bcPathAbs) >= 217);
         }
 
         if ($bcPathAbs!==false) unlink($bcPathAbs);
