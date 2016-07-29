@@ -118,7 +118,7 @@ class Base2DBarcode
     }
 
     /**
-     * Return a SVG string representation of barcode.
+     * Return a Full Doctype SVG string representation of barcode.
      *
      * @param string $code
      * @param string $type
@@ -130,15 +130,35 @@ class Base2DBarcode
      */
     public function getBarcodeSVGcode($code, $type, $w=3, $h=3, $color='black')
     {
+        return '<?xml version="1.0" standalone="no"?>' . "\n"
+             . '<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">' . "\n"
+             . $this->getRawBarcodeSVGcode($code, $type, $w=3, $h=3, $color='black');
+    }
+
+    /**
+     * Return an inline SVG string representation of barcode.
+     *
+     * @param string $code
+     * @param string $type
+     * @param int    $w
+     * @param int    $h
+     * @param string $color
+     *
+     * @return string
+     */
+    public function getRawBarcodeSVGcode($code, $type, $w=3, $h=3, $color='black')
+    {
         //set barcode code and type
         $this->setBarcode($code, $type);
         // replace table for special characters
-        $repstr = array("\0" => '', '&' => '&amp;', '<' => '&lt;', '>' => '&gt;');
-        $svg = '<' . '?' . 'xml version="1.0" standalone="no"' . '?' . '>' . "\n";
-        $svg .= '<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">' . "\n";
-        $svg .= '<svg width="' . round(($this->barcodeArray['num_cols'] * $w), 3) . '" height="' . round(($this->barcodeArray['num_rows'] * $h), 3) . '" version="1.1" xmlns="http://www.w3.org/2000/svg">' . "\n";
-        $svg .= "\t" . '<desc>' . strtr($this->barcodeArray['code'], $repstr) . '</desc>' . "\n";
-        $svg .= "\t" . '<g id="elements" fill="' . $color . '" stroke="none">' . "\n";
+        $repstr = strtr($this->barcodeArray['code'], array("\0" => '', '&' => '&amp;', '<' => '&lt;', '>' => '&gt;'));
+        $tw = round(($this->barcodeArray['num_cols'] * $w), 3);
+        $th = round(($this->barcodeArray['num_cols'] * $h), 3);
+        $svg = "
+          <svg viewBox=\"0 0 $tw $th\" width=\"$tw\" height=\"$th\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\">
+          <desc>$repstr</desc>
+          <g id=\"elements\" fill=\"$color\" stroke=\"none\">
+        ";
         // print barcode elements
         $y = 0;
         // for each row
@@ -159,7 +179,7 @@ class Base2DBarcode
 
         return $svg;
     }
-
+    
     /**
      * Return an HTML representation of barcode.
      *
