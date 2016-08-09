@@ -1,6 +1,9 @@
 Changelog
 =========
 
+1.0.2 (2016-08-08)
+ * fixed issues with outputting in PNG format with imagick
+
 1.0.1 (2015-08-28)
 ------------------
  * minor filename issue

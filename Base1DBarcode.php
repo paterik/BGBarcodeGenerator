@@ -216,6 +216,8 @@ class Base1DBarcode
             $fgcol = new \imagickpixel('rgb('.$color[0].','.$color[1].','.$color[2].')');
             $png = new \Imagick();
             $png->newImage($width, $height, 'none', 'png');
+            $bar = new \imagickdraw();
+            $bar->setFillColor($fgcol);
         } else {
 
             return false;
@@ -234,8 +236,6 @@ class Base1DBarcode
                 $y = round(($v['p'] * $h / $this->barcodeArray['maxh']), 3);
                 // draw a vertical bar
                 if ($imagick) {
-                    $bar = new \imagickdraw();
-                    $bar->setfillcolor($fgcol);
                     $bar->rectangle($x, $y, ($x + $bw), ($y + $bh));
                 } else {
                     imagefilledrectangle($png, $x, $y, ($x + $bw), ($y + $bh), $fgcol);
@@ -291,14 +291,21 @@ class Base1DBarcode
      */
     public function rotateImage($image, $angel)
     {
-        imagealphablending($image, false);
-        imagesavealpha($image, true);
+        if (function_exists('imagecreate')) {
+            imagealphablending($image, false);
+            imagesavealpha($image, true);
 
-        $imageRotate = imagerotate($image, $angel, imageColorAllocateAlpha($image, 0, 0, 0, 127));
-        imagealphablending($imageRotate, false);
-        imagesavealpha($imageRotate, true);
+            $imageRotate = imagerotate($image, $angel, imageColorAllocateAlpha($image, 0, 0, 0, 127));
+            imagealphablending($imageRotate, false);
+            imagesavealpha($imageRotate, true);
 
-        return $imageRotate;
+            return $imageRotate;
+        }
+        else {
+            /** @var $image \Imagick */
+            $image->rotateImage(new \imagickpixel('rgb(0,0,0)'), $angel);
+            return $image;
+        }
     }
 
     /**
@@ -341,6 +348,8 @@ class Base1DBarcode
             $fgcol = new \imagickpixel('rgb('.$color[0].','.$color[1].','.$color[2].')');
             $png = new \Imagick();
             $png->newImage($width, $height, 'none', 'png');
+            $bar = new \imagickdraw();
+            $bar->setFillColor($fgcol);
         } else {
 
             return false;
@@ -359,8 +368,6 @@ class Base1DBarcode
                 $y = round(($v['p'] * $h / $this->barcodeArray['maxh']), $sharp);
                 // draw a vertical bar
                 if ($imagick) {
-                    $bar = new \imagickdraw();
-                    $bar->setfillcolor($fgcol);
                     $bar->rectangle($x, $y, ($x + $bw), ($y + $bh));
                 } else {
                     imagefilledrectangle($png, $x, $y, ($x + $bw), ($y + $bh), $fgcol);
@@ -382,7 +389,9 @@ class Base1DBarcode
         $saveFile = $this->checkfile($this->savePath . $nType . '_' . $code . '.png', true);
 
         if ($imagick) {
-            $png->drawimage($bar);
+            $png->drawImage($bar);
+            $png->writeImage($saveFile);
+            return $saveFile;
         }
 
         if (imagepng($png, $saveFile)) {

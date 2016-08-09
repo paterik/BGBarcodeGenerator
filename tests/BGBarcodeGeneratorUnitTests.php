@@ -52,7 +52,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
      */
     public function testImageRenderer()
     {
-        $checkCondition = function_exists('imagecreate') || function_exists('imagick');
+        $checkCondition = function_exists('imagecreate') || class_exists('imagick');
         $this->assertTrue($checkCondition, 'neither GDlib nor ImageMagick extension found, you\'ve to install on of both to use BGBarcodeGenerator lib.');
     }
 

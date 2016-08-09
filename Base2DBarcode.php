@@ -248,7 +248,8 @@ class Base2DBarcode
             $fgcol = new \imagickpixel('rgb(' . $color[0] . ',' . $color[1] . ',' . $color[2] . ')');
             $png = new \Imagick();
             $png->newImage($width, $height, 'none', 'png');
-
+            $bar = new \imagickdraw();
+            $bar->setFillColor($fgcol);
         } else {
 
             return false;
@@ -263,8 +264,6 @@ class Base2DBarcode
                 if ($this->barcodeArray['bcode'][$r][$c] == 1) {
                     // draw a single barcode cell
                     if ($imagick) {
-                        $bar = new \imagickdraw();
-                        $bar->setfillcolor($fgcol);
                         $bar->rectangle($x, $y, ($x + $w), ($y + $h));
                     } else {
                         imagefilledrectangle($png, $x, $y, ($x + $w), ($y + $h), $fgcol);
@@ -344,6 +343,8 @@ class Base2DBarcode
             $fgcol = new \imagickpixel('rgb(' . $color[0] . ',' . $color[1] . ',' . $color[2] . ')');
             $png = new \Imagick();
             $png->newImage($width, $height, 'none', 'png');
+            $bar = new \imagickdraw();
+            $bar->setFillColor($fgcol);
         } else {
 
             return false;
@@ -358,8 +359,6 @@ class Base2DBarcode
                 if ($this->barcodeArray['bcode'][$r][$c] == 1) {
                     // draw a single barcode cell
                     if ($imagick) {
-                        $bar = new \imagickdraw();
-                        $bar->setfillcolor($fgcol);
                         $bar->rectangle($x, $y, ($x + $w), ($y + $h));
                     } else {
                         imagefilledrectangle($png, $x, $y, ($x + $w), ($y + $h), $fgcol);
@@ -376,8 +375,9 @@ class Base2DBarcode
         $saveFile = $this->checkfile($this->savePath . $nType . '_' . $code . '.png', true);
 
         if ($imagick) {
-            $png->drawimage($bar);
-            //echo $png;
+            $png->drawImage($bar);
+            $png->writeImage($saveFile);
+            return $saveFile;
         }
         // ImagePng : weazL
         if (imagepng($png, $saveFile)) {
