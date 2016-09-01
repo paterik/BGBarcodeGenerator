@@ -41,21 +41,21 @@ $bc2d->savePath = $bc1d->savePath;
             <div class="barcode-block">
                 <h1>PDF417 2D Code</h1>
                 <p>PDF417 (ISO/IEC 15438:2006)</p>
-                <img src="/tmp/<?php echo $bc2d->getBarcodeFilenameFromGenPath($bc2d->getBarcodePNGPath('hello world!', 'pdf417', 2, 1.75)) ?>" alt="PDF417 barcode" title="PDF417 Barcode Image">
+                <img src="/tmp/<?php echo $bc2d->getBarcodeFilenameFromGenPath($bc2d->getBarcodePNGPath('hello world!', 'pdf417', 'imageName', 2, 1.75)) ?>" alt="PDF417 barcode" title="PDF417 Barcode Image">
                 <h2>hello world!</h2>
             </div>
 
             <div class="barcode-block">
                 <h1>DATAMATRIX 2D Code</h1>
                 <p>Datamatrix (ISO/IEC 16022)</p>
-                <img src="/tmp/<?php echo $bc2d->getBarcodeFilenameFromGenPath($bc2d->getBarcodePNGPath('hello world!', 'datamatrix', 4, 4)) ?>" alt="DATAMATRIX barcode" title="DATAMATRIX Barcode Image">
+                <img src="/tmp/<?php echo $bc2d->getBarcodeFilenameFromGenPath($bc2d->getBarcodePNGPath('hello world!', 'datamatrix', 'imageName', 4, 4)) ?>" alt="DATAMATRIX barcode" title="DATAMATRIX Barcode Image">
                 <h2>hello world!</h2>
             </div>
 
             <div class="barcode-block">
                 <h1>QRCode 2D Code</h1>
                 <p>QRCode, Basic</p>
-                <img src="/tmp/<?php echo $bc2d->getBarcodeFilenameFromGenPath($bc2d->getBarcodePNGPath('hello world!', 'qrcode', 4, 4)) ?>" alt="qrcode barcode" title="qrcode Barcode Image">
+                <img src="/tmp/<?php echo $bc2d->getBarcodeFilenameFromGenPath($bc2d->getBarcodePNGPath('hello world!', 'qrcode', 'imageName', 4, 4)) ?>" alt="qrcode barcode" title="qrcode Barcode Image">
                 <h2>hello world!</h2>
             </div>
 
@@ -64,210 +64,210 @@ $bc2d->savePath = $bc1d->savePath;
             <div class="barcode-block">
                 <h1>C39 Barcode</h1>
                 <p>ANSI MH10.8M-1983 - USD3 - 3 of 9</p>
-                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'C39', 1.75, 45)) ?>" alt="C32 barcode" title="C32 Barcode Image">
+                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'C39', 'imageName', 1.75, 45)) ?>" alt="C32 barcode" title="C32 Barcode Image">
                 <h2>1234567</h2>
             </div>
 
             <div class="barcode-block">
                 <h1>C39+ Barcode</h1>
                 <p>ANSI MH10.8M-1983 - USD3 - 3 of 9, with checksum</p>
-                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'C39+', 1.75, 45)) ?>" alt="C32+ barcode" title="C32+ Barcode Image">
+                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'C39+', 'imageName', 1.75, 45)) ?>" alt="C32+ barcode" title="C32+ Barcode Image">
                 <h2>1234567</h2>
             </div>
 
             <div class="barcode-block">
                 <h1>C39E Barcode</h1>
                 <p>ANSI MH10.8M-1983 - USD3 - 3 of 9, EXTENDED Version</p>
-                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'C39E', 1.75, 45)) ?>" alt="C32E barcode" title="C32E Barcode Image">
+                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'C39E', 'imageName', 1.75, 45)) ?>" alt="C32E barcode" title="C32E Barcode Image">
                 <h2>1234567</h2>
             </div>
 
             <div class="barcode-block">
                 <h1>C39E+ Barcode</h1>
                 <p>ANSI MH10.8M-1983 - USD3 - 3 of 9, EXTENDED Version with checksum</p>
-                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'C39E+', 2, 45)) ?>" alt="C32E+ barcode" title="C32E+ Barcode Image">
+                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'C39E+', 'imageName', 2, 45)) ?>" alt="C32E+ barcode" title="C32E+ Barcode Image">
                 <h2>1234567</h2>
             </div>
 
             <div class="barcode-block">
                 <h1>C93 Barcode</h1>
                 <p>USS93</p>
-                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'C93', 2, 45)) ?>" alt="C93 barcode" title="C93 Barcode Image">
+                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'C93', 'imageName', 2, 45)) ?>" alt="C93 barcode" title="C93 Barcode Image">
                 <h2>1234567</h2>
             </div>
 
             <div class="barcode-block">
                 <h1>S25 Barcode</h1>
                 <p>Standard 2 of 5</p>
-                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'S25', 2, 45)) ?>" alt="S25 barcode" title="S25 Barcode Image">
+                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'S25', 'imageName', 2, 45)) ?>" alt="S25 barcode" title="S25 Barcode Image">
                 <h2>1234567</h2>
             </div>
 
             <div class="barcode-block">
                 <h1>S25+ Barcode</h1>
                 <p>Standard 2 of 5, with checksum</p>
-                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'S25+', 2, 45)) ?>" alt="S25+ barcode" title="S25+ Barcode Image">
+                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'S25+', 'imageName', 2, 45)) ?>" alt="S25+ barcode" title="S25+ Barcode Image">
                 <h2>1234567</h2>
             </div>
 
             <div class="barcode-block">
                 <h1>I25 Barcode</h1>
                 <p>Interleaved 2 of 5</p>
-                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'I25', 2, 45)) ?>" alt="I25 barcode" title="I25 Barcode Image">
+                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'I25', 'imageName', 2, 45)) ?>" alt="I25 barcode" title="I25 Barcode Image">
                 <h2>1234567</h2>
             </div>
 
             <div class="barcode-block">
                 <h1>I25+ Barcode</h1>
                 <p>Interleaved 2 of 5, with checksum</p>
-                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'I25+', 2, 45)) ?>" alt="I25+ barcode" title="I25+ Barcode Image">
+                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'I25+', 'imageName', 2, 45)) ?>" alt="I25+ barcode" title="I25+ Barcode Image">
                 <h2>1234567</h2>
             </div>
 
             <div class="barcode-block">
                 <h1>C128 Barcode</h1>
                 <p>CODE 128, native</p>
-                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'C128', 2, 45)) ?>" alt="C128 barcode" title="C128 Barcode Image">
+                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'C128', 'imageName', 2, 45)) ?>" alt="C128 barcode" title="C128 Barcode Image">
                 <h2>1234567</h2>
             </div>
 
             <div class="barcode-block">
                 <h1>128 A Barcode</h1>
                 <p>CODE 128 A</p>
-                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'C128A', 2, 45)) ?>" alt="C128A barcode" title="C128A Barcode Image">
+                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'C128A', 'imageName', 2, 45)) ?>" alt="C128A barcode" title="C128A Barcode Image">
                 <h2>1234567</h2>
             </div>
 
             <div class="barcode-block">
                 <h1>128 B Barcode</h1>
                 <p>CODE 128 B</p>
-                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'C128B', 2, 45)) ?>" alt="C128B barcode" title="C128B Barcode Image">
+                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'C128B', 'imageName', 2, 45)) ?>" alt="C128B barcode" title="C128B Barcode Image">
                 <h2>1234567</h2>
             </div>
 
             <div class="barcode-block">
                 <h1>128 C Barcode</h1>
                 <p>CODE 128 C</p>
-                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('20140200000057', 'C128C', 2, 45)) ?>" alt="C128C barcode" title="C128C Barcode Image">
+                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('20140200000057', 'imageName', 'C128C', 2, 45)) ?>" alt="C128C barcode" title="C128C Barcode Image">
                 <h2>20140200000057</h2>
             </div>
 
             <div class="barcode-block">
                 <h1>EAN2 Barcode</h1>
                 <p>2-Digits UPC-Based Extention</p>
-                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'EAN2', 2, 45)) ?>" alt="EAN2 barcode" title="EAN2 Barcode Image">
+                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'EAN2', 'imageName', 2, 45)) ?>" alt="EAN2 barcode" title="EAN2 Barcode Image">
                 <h2>1234567</h2>
             </div>
 
             <div class="barcode-block">
                 <h1>EAN2 Barcode</h1>
                 <p>5-Digits UPC-Based Extention</p>
-                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'EAN5', 2, 45)) ?>" alt="EAN5 barcode" title="EAN5 Barcode Image">
+                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'EAN5', 'imageName', 2, 45)) ?>" alt="EAN5 barcode" title="EAN5 Barcode Image">
                 <h2>1234567</h2>
             </div>
 
             <div class="barcode-block">
                 <h1>EAN8 Barcode</h1>
                 <p>EAN 8 Product-Code</p>
-                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'EAN8', 2, 45)) ?>" alt="EAN8 barcode" title="EAN8 Barcode Image">
+                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'EAN8', 'imageName', 2, 45)) ?>" alt="EAN8 barcode" title="EAN8 Barcode Image">
                 <h2>1234567</h2>
             </div>
 
             <div class="barcode-block">
                 <h1>EAN13 Barcode</h1>
                 <p>EAN 13 Product-Code</p>
-                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'EAN13', 2, 45)) ?>" alt="EAN13 barcode" title="EAN13 Barcode Image">
+                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'EAN13', 'imageName', 2, 45)) ?>" alt="EAN13 barcode" title="EAN13 Barcode Image">
                 <h2>1234567</h2>
             </div>
 
             <div class="barcode-block">
                 <h1>UPCA Barcode</h1>
                 <p>UPC-A</p>
-                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'UPCA', 2, 45)) ?>" alt="UPCA barcode" title="UPCA Barcode Image">
+                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'UPCA', 'imageName', 2, 45)) ?>" alt="UPCA barcode" title="UPCA Barcode Image">
                 <h2>1234567</h2>
             </div>
 
             <div class="barcode-block">
                 <h1>UPCE Barcode</h1>
                 <p>UPC-E</p>
-                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'UPCE', 2, 45)) ?>" alt="UPCE barcode" title="UPCE Barcode Image">
+                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'UPCE', 'imageName', 2, 45)) ?>" alt="UPCE barcode" title="UPCE Barcode Image">
                 <h2>1234567</h2>
             </div>
 
             <div class="barcode-block">
                 <h1>MSI Barcode</h1>
                 <p>MSI (Variation of Plessey code)</p>
-                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'MSI', 2, 45)) ?>" alt="MSI barcode" title="MSI Barcode Image">
+                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'MSI', 'imageName', 2, 45)) ?>" alt="MSI barcode" title="MSI Barcode Image">
                 <h2>1234567</h2>
             </div>
 
             <div class="barcode-block">
                 <h1>MSI+ Barcode</h1>
                 <p>MSI with checksum (modulo 11)</p>
-                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'MSI+', 2, 45)) ?>" alt="MSI+ barcode" title="MSI+ Barcode Image">
+                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'MSI+', 'imageName', 2, 45)) ?>" alt="MSI+ barcode" title="MSI+ Barcode Image">
                 <h2>1234567</h2>
             </div>
 
             <div class="barcode-block">
                 <h1>POSTNET Barcode</h1>
                 <p>POSTNET Barcode</p>
-                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'POSTNET', 2, 45)) ?>" alt="POSTNET barcode" title="POSTNET Barcode Image">
+                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'POSTNET', 'imageName', 2, 45)) ?>" alt="POSTNET barcode" title="POSTNET Barcode Image">
                 <h2>1234567</h2>
             </div>
 
             <div class="barcode-block">
                 <h1>PLANET Barcode</h1>
                 <p>PLANET Barcode</p>
-                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'PLANET', 2, 45)) ?>" alt="PLANET barcode" title="PLANET Barcode Image">
+                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'PLANET', 'imageName', 2, 45)) ?>" alt="PLANET barcode" title="PLANET Barcode Image">
                 <h2>1234567</h2>
             </div>
 
             <div class="barcode-block">
                 <h1>RMS4CC Barcode</h1>
                 <p>RMS4CC (Royal Mail 4-state Customer Code) - CBC (Customer Bar Code)</p>
-                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'RMS4CC', 2, 45)) ?>" alt="RMS4CC barcode" title="RMS4CC Barcode Image">
+                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'RMS4CC', 'imageName', 2, 45)) ?>" alt="RMS4CC barcode" title="RMS4CC Barcode Image">
                 <h2>1234567</h2>
             </div>
 
             <div class="barcode-block">
                 <h1>KIX Barcode</h1>
                 <p> KIX (Klant index - Customer index)</p>
-                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'KIX', 2, 45)) ?>" alt="KIX barcode" title="KIX Barcode Image">
+                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'KIX', 'imageName', 2, 45)) ?>" alt="KIX barcode" title="KIX Barcode Image">
                 <h2>1234567</h2>
             </div>
 
             <div class="barcode-block">
                 <h1>IMB Barcode</h1>
                 <p>Intelligent Mail Barcode - Onecode - USPS-B-3200</p>
-                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'IMB', 2, 45)) ?>" alt="IMB barcode" title="IMB Barcode Image">
+                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'IMB', 'imageName', 2, 45)) ?>" alt="IMB barcode" title="IMB Barcode Image">
                 <h2>1234567</h2>
             </div>
 
             <div class="barcode-block">
                 <h1>CODABAR Barcode</h1>
                 <p>CODABAR Barcode</p>
-                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'CODABAR', 2, 45)) ?>" alt="CODABAR barcode" title="CODABAR Barcode Image">
+                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'CODABAR', 'imageName', 2, 45)) ?>" alt="CODABAR barcode" title="CODABAR Barcode Image">
                 <h2>1234567</h2>
             </div>
 
             <div class="barcode-block">
                 <h1>CODE11 Barcode</h1>
                 <p>CODE11 Barcode</p>
-                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'CODE11', 2, 45)) ?>" alt="CODE11 barcode" title="CODE11 Barcode Image">
+                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'CODE11', 'imageName', 2, 45)) ?>" alt="CODE11 barcode" title="CODE11 Barcode Image">
                 <h2>1234567</h2>
             </div>
 
             <div class="barcode-block">
                 <h1>PHARMA Barcode</h1>
                 <p>PHARMACODE</p>
-                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'PHARMA', 2, 45)) ?>" alt="PHARMA barcode" title="PHARMA Barcode Image">
+                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'PHARMA', 'imageName', 2, 45)) ?>" alt="PHARMA barcode" title="PHARMA Barcode Image">
                 <h2>1234567</h2>
             </div>
 
             <div class="barcode-block">
                 <h1>PHARMA2T Barcode</h1>
                 <p>PHARMACODE TWO-TRACKS</p>
-                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'PHARMA2T', 2, 45)) ?>" alt="PHARMA2T barcode" title="PHARMA2T Barcode Image">
+                <img src="/tmp/<?php echo $bc1d->getBarcodeFilenameFromGenPath($bc1d->getBarcodePNGPath('1234567', 'PHARMA2T', 'imageName', 2, 45)) ?>" alt="PHARMA2T barcode" title="PHARMA2T Barcode Image">
                 <h2>1234567</h2>
             </div>
 
