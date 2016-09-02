@@ -320,9 +320,7 @@ class Base2DBarcode
      */
     public function getBarcodePNGPath($code, $type, $name, $w=3, $h=3, $color=array(0, 0, 0))
     {
-        // set name of image png
-        $name = $name;
-        
+
         //set barcode code and type
         $this->setBarcode($code, $type);
         $bar = null;
