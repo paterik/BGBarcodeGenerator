@@ -1,7 +1,13 @@
 Changelog
 =========
+1.0.3 (2016-08-12)
+------------------
+ * fixed parameter error in getBarcodePNGPath
+ * fixed functional tests
+ * improve filename generator
 
 1.0.2 (2016-08-08)
+------------------
  * fixed issues with outputting in PNG format with imagick
 
 1.0.1 (2015-08-28)
@@ -12,7 +18,6 @@ Changelog
 
 1.0.0 (2014-02-14)
 ------------------
-
  * fixed datamatrix encoder
  * optimized qrcode encoder
  * fixed GDLib rendering method
