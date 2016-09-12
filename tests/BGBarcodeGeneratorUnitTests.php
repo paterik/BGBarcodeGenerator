@@ -65,7 +65,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
     {
         $d1 = new barCode();
         $d1->savePath = self::C_TMP_PATH;
-        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'C39', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
+        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'C39', null, self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
         if (function_exists('imagecreate')) {
             $checkCondition = (file_exists($bcPathAbs)) && (filesize($bcPathAbs) === 144);
@@ -103,7 +103,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
         $d1 = new barCode();
         $d1->savePath = self::C_TMP_PATH;
 
-        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'C39E', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
+        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'C39E', null, self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
         if (function_exists('imagecreate')) {
             $checkCondition = (file_exists($bcPathAbs)) && (filesize($bcPathAbs) === 144);
@@ -142,7 +142,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
         $d1 = new barCode();
         $d1->savePath = self::C_TMP_PATH;
 
-        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'C39+', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
+        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'C39+', null, self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
         if (function_exists('imagecreate')) {
             $checkCondition = (file_exists($bcPathAbs)) && (filesize($bcPathAbs) === 150);
@@ -181,7 +181,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
         $d1 = new barCode();
         $d1->savePath = self::C_TMP_PATH;
 
-        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'C93', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
+        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'C93', null, self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
         if (function_exists('imagecreate')) {
             $checkCondition = (file_exists($bcPathAbs)) && (filesize($bcPathAbs) === 130);
@@ -220,7 +220,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
         $d1 = new barCode();
         $d1->savePath = self::C_TMP_PATH;
 
-        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'S25', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
+        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'S25', null, self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
         if (function_exists('imagecreate')) {
             $checkCondition = (file_exists($bcPathAbs)) && (filesize($bcPathAbs) === 139);
@@ -259,7 +259,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
         $d1 = new barCode();
         $d1->savePath = self::C_TMP_PATH;
 
-        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'I25', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
+        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'I25', null, self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
         if (function_exists('imagecreate')) {
             $checkCondition = (file_exists($bcPathAbs)) && (filesize($bcPathAbs) === 120);
@@ -298,7 +298,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
         $d1 = new barCode();
         $d1->savePath = self::C_TMP_PATH;
 
-        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'I25+', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
+        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'I25+', null, self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
         if (function_exists('imagecreate')) {
             $checkCondition = (file_exists($bcPathAbs)) && (filesize($bcPathAbs) === 120);
@@ -337,7 +337,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
         $d1 = new barCode();
         $d1->savePath = self::C_TMP_PATH;
 
-        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'C128', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
+        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'C128', null, self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
         if (function_exists('imagecreate')) {
             $checkCondition = (file_exists($bcPathAbs)) && (filesize($bcPathAbs) === 128);
@@ -376,7 +376,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
         $d1 = new barCode();
         $d1->savePath = self::C_TMP_PATH;
 
-        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'C128A', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
+        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'C128A', null, self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
         if (function_exists('imagecreate')) {
             $checkCondition = (file_exists($bcPathAbs)) && (filesize($bcPathAbs) === 135);
@@ -415,7 +415,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
         $d1 = new barCode();
         $d1->savePath = self::C_TMP_PATH;
 
-        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'C128B', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
+        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'C128B', null, self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
         if (function_exists('imagecreate')) {
             $checkCondition = (file_exists($bcPathAbs)) && (filesize($bcPathAbs) === 135);
@@ -454,7 +454,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
         $d1 = new barCode();
         $d1->savePath = self::C_TMP_PATH;
 
-        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_C128C, 'C128B', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
+        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_C128C, 'C128B', null, self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
         if (function_exists('imagecreate')) {
             $checkCondition = (file_exists($bcPathAbs)) && (filesize($bcPathAbs) === 160);
@@ -493,7 +493,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
         $d1 = new barCode();
         $d1->savePath = self::C_TMP_PATH;
 
-        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_EAN2, 'EAN2', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
+        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_EAN2, 'EAN2', null, self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
         if (function_exists('imagecreate')) {
             $checkCondition = (file_exists($bcPathAbs)) && (filesize($bcPathAbs) === 106);
@@ -532,7 +532,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
         $d1 = new barCode();
         $d1->savePath = self::C_TMP_PATH;
 
-        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_EAN5, 'EAN5', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
+        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_EAN5, 'EAN5', null, self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
         if (function_exists('imagecreate')) {
             $checkCondition = (file_exists($bcPathAbs)) && (filesize($bcPathAbs) === 115);
@@ -571,7 +571,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
         $d1 = new barCode();
         $d1->savePath = self::C_TMP_PATH;
 
-        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_EAN5, 'EAN13', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
+        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_EAN5, 'EAN13', null, self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
         if (function_exists('imagecreate')) {
             $checkCondition = (file_exists($bcPathAbs)) && (filesize($bcPathAbs) === 129);
@@ -610,7 +610,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
         $d1 = new barCode();
         $d1->savePath = self::C_TMP_PATH;
 
-        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_EAN5, 'EAN8', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
+        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_EAN5, 'EAN8', null, self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
         if (function_exists('imagecreate')) {
             $checkCondition = (file_exists($bcPathAbs)) && (filesize($bcPathAbs) === 120);
@@ -649,7 +649,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
         $d1 = new barCode();
         $d1->savePath = self::C_TMP_PATH;
 
-        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_UPCA, 'UPCA', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
+        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_UPCA, 'UPCA', null, self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
         if (function_exists('imagecreate')) {
             $checkCondition = (file_exists($bcPathAbs)) && (filesize($bcPathAbs) === 129);
@@ -688,7 +688,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
         $d1 = new barCode();
         $d1->savePath = self::C_TMP_PATH;
 
-        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_UPCE, 'UPCE', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
+        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_UPCE, 'UPCE', null, self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
         if (function_exists('imagecreate')) {
             $checkCondition = (file_exists($bcPathAbs)) && (filesize($bcPathAbs) === 116);
@@ -727,7 +727,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
         $d1 = new barCode();
         $d1->savePath = self::C_TMP_PATH;
 
-        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'MSI', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
+        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'MSI', null, self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
         if (function_exists('imagecreate')) {
             $checkCondition = (file_exists($bcPathAbs)) && (filesize($bcPathAbs) === 128);
@@ -766,7 +766,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
         $d1 = new barCode();
         $d1->savePath = self::C_TMP_PATH;
 
-        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'MSI+', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
+        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'MSI+', null, self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
         if (function_exists('imagecreate')) {
             $checkCondition = (file_exists($bcPathAbs)) && (filesize($bcPathAbs) === 133);
@@ -805,7 +805,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
         $d1 = new barCode();
         $d1->savePath = self::C_TMP_PATH;
 
-        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'POSTNET', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
+        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'POSTNET', null, self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
         if (function_exists('imagecreate')) {
             $checkCondition = (file_exists($bcPathAbs)) && (filesize($bcPathAbs) === 136);
@@ -844,7 +844,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
         $d1 = new barCode();
         $d1->savePath = self::C_TMP_PATH;
 
-        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'PLANET', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
+        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'PLANET', null, self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
         if (function_exists('imagecreate')) {
             $checkCondition = (file_exists($bcPathAbs)) && (filesize($bcPathAbs) === 136);
@@ -883,7 +883,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
         $d1 = new barCode();
         $d1->savePath = self::C_TMP_PATH;
 
-        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'RMS4CC', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
+        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'RMS4CC', null, self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
         if (function_exists('imagecreate')) {
             $checkCondition = (file_exists($bcPathAbs)) && (filesize($bcPathAbs) === 146);
@@ -922,7 +922,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
         $d1 = new barCode();
         $d1->savePath = self::C_TMP_PATH;
 
-        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'KIX', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
+        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'KIX', null, self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
         if (function_exists('imagecreate')) {
             $checkCondition = (file_exists($bcPathAbs)) && (filesize($bcPathAbs) === 141);
@@ -961,7 +961,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
         $d1 = new barCode();
         $d1->savePath = self::C_TMP_PATH;
 
-        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'IMB', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
+        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'IMB', null, self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
         if (function_exists('imagecreate')) {
             $checkCondition = (file_exists($bcPathAbs)) && (filesize($bcPathAbs) === 180);
@@ -1000,7 +1000,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
         $d1 = new barCode();
         $d1->savePath = self::C_TMP_PATH;
 
-        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'CODABAR', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
+        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'CODABAR', null, self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
         if (function_exists('imagecreate')) {
             $checkCondition = (file_exists($bcPathAbs)) && (filesize($bcPathAbs) === 129);
@@ -1039,7 +1039,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
         $d1 = new barCode();
         $d1->savePath = self::C_TMP_PATH;
 
-        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'CODE11', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
+        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'CODE11', null, self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
         if (function_exists('imagecreate')) {
             $checkCondition = (file_exists($bcPathAbs)) && (filesize($bcPathAbs) === 125);
@@ -1078,7 +1078,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
         $d1 = new barCode();
         $d1->savePath = self::C_TMP_PATH;
 
-        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'PHARMA', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
+        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'PHARMA', null, self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
         if (function_exists('imagecreate')) {
             $checkCondition = (file_exists($bcPathAbs)) && (filesize($bcPathAbs) === 124);
@@ -1117,7 +1117,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
         $d1 = new barCode();
         $d1->savePath = self::C_TMP_PATH;
 
-        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'PHARMA2T', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
+        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'PHARMA2T', null, self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT);
 
         if (function_exists('imagecreate')) {
             $checkCondition = (file_exists($bcPathAbs)) && (filesize($bcPathAbs) === 118);
@@ -1156,7 +1156,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
         $d2 = new matrixCode();
         $d2->savePath = self::C_TMP_PATH;
 
-        $bcPathAbs = $d2->getBarcodePNGPath(self::C_MC_DEFAULT, 'datamatrix', self::C_MC_2D_WIDTH, self::C_MC_2D_HEIGHT);
+        $bcPathAbs = $d2->getBarcodePNGPath(self::C_MC_DEFAULT, 'datamatrix', null, self::C_MC_2D_WIDTH, self::C_MC_2D_HEIGHT);
 
         if (function_exists('imagecreate')) {
             $checkCondition = (file_exists($bcPathAbs)) && (filesize($bcPathAbs) === 227);
@@ -1179,7 +1179,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
         $d2 = new matrixCode();
         $d2->savePath = self::C_TMP_PATH;
 
-        $bcPathAbs = $d2->getBarcodePNGPath(self::C_MC_DEFAULT, 'pdf417', self::C_MC_2D_WIDTH, self::C_MC_2D_HEIGHT);
+        $bcPathAbs = $d2->getBarcodePNGPath(self::C_MC_DEFAULT, 'pdf417', null, self::C_MC_2D_WIDTH, self::C_MC_2D_HEIGHT);
 
         if (function_exists('imagecreate')) {
             $checkCondition = (file_exists($bcPathAbs)) && (filesize($bcPathAbs) === 317);
@@ -1202,7 +1202,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
         $d2 = new matrixCode();
         $d2->savePath = self::C_TMP_PATH;
 
-        $bcPathAbs = $d2->getBarcodePNGPath(self::C_MC_DEFAULT, 'qrcode', self::C_MC_2D_WIDTH, self::C_MC_2D_HEIGHT);
+        $bcPathAbs = $d2->getBarcodePNGPath(self::C_MC_DEFAULT, 'qrcode', null, self::C_MC_2D_WIDTH, self::C_MC_2D_HEIGHT);
 
         if (function_exists('imagecreate')) {
             $checkCondition = (file_exists($bcPathAbs)) && (filesize($bcPathAbs) > 225 && filesize($bcPathAbs) < 255);
@@ -1225,7 +1225,7 @@ class BarcodeBaseTest extends \PHPUnit_Framework_TestCase
         $d1 = new barCode();
         $d1->savePath = self::C_TMP_PATH;
 
-        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'I25', self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT, array(0,0,0), true);
+        $bcPathAbs = $d1->getBarcodePNGPath(self::C_BC_DEFAULT, 'I25', null, self::C_BC_1D_WIDTH, self::C_BC_1D_HEIGHT, array(0,0,0), true);
 
         $checkCondition = (file_exists($bcPathAbs)) ? true : false;
         if (function_exists('imagecreate')) {
