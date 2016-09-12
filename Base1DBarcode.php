@@ -313,6 +313,7 @@ class Base1DBarcode
      *
      * @param string $code
      * @param string $type
+     * @param string $name
      * @param int    $w
      * @param int    $h
      * @param array  $color
@@ -322,10 +323,14 @@ class Base1DBarcode
      *
      * @throws \Exception
      */
-    public function getBarcodePNGPath($code, $type, $name, $w=2, $h=30, $color=array(0,0,0), $vertical=false)
+    public function getBarcodePNGPath($code, $type, $name=null, $w=2, $h=30, $color=array(0,0,0), $vertical=false)
     {
         $this->setBarcode($code, $type);
         $bar = null;
+
+        if (true === empty($name)) {
+            $name = md5($code);
+        }
 
         // calculate image size
         $width = ($this->barcodeArray['maxw'] * $w);
