@@ -12,3 +12,4 @@ nbproject/
 .project
 atlassian-ide-plugin.xml
 composer.lock
+vendor
