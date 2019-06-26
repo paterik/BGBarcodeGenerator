@@ -56,7 +56,6 @@ class Base2DBarcode
 {
     /**
      * Array representation of barcode.
-     * @protected
      */
     protected $barcodeArray = false;
     /**
@@ -179,7 +178,7 @@ class Base2DBarcode
 
         return $svg;
     }
-    
+
     /**
      * Return an HTML representation of barcode.
      *
