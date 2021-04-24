@@ -318,12 +318,13 @@ class Base1DBarcode
      * @param int    $h
      * @param array  $color
      * @param bool   $vertical
+     * @param bool   $transparent
      *
      * @return bool
      *
      * @throws \Exception
      */
-    public function getBarcodePNGPath($code, $type, $name=null, $w=2, $h=30, $color=array(0,0,0), $vertical=false)
+    public function getBarcodePNGPath($code, $type, $name=null, $w=2, $h=30, $color=array(0,0,0), $vertical=false, $transparent = true)
     {
         $this->setBarcode($code, $type);
         $bar = null;
@@ -346,7 +347,9 @@ class Base1DBarcode
 
             $png = imagecreate($width, $height);
             $bgcol = imagecolorallocate($png, 255, 255, 255);
-            imagecolortransparent($png, $bgcol);
+            if($transparent){
+                imagecolortransparent($png, $bgcol);
+            }
             $fgcol = imagecolorallocate($png, $color[0], $color[1], $color[2]);
         } elseif (extension_loaded('imagick')) {
             $imagick = true;
